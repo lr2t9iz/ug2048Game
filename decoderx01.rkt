@@ -1,0 +1,20 @@
+(display "Hello World\n")
+
+(define (main)
+  (define script "")
+  (newline)
+  (define (ciclo)
+    (display "input# ")
+    (set! script (read-line))
+    ;IF(Where)
+    (if (not (or (equal? script "quit") (equal? script "QUIT")))
+        (begin
+          (ciclo)
+          )
+        (begin (display "Exiting..."))
+        )
+    ;END IF
+    )
+  (ciclo)
+  )
+(main)
