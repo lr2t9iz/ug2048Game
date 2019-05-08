@@ -1,1 +1,21 @@
-(display "Hello World\n")
+(display "Hola Soy Josue la mera verga")
+
+(define (main)
+  (define commandline "")
+  (newline)
+  ;FOR
+  (define (ciclo)
+    (display "encoder>> ") (set! commandline (read-line))
+    ;IF(Where)
+    (if (not (equal? commandline "quit")) ;cl != quit
+        (begin
+          (ciclo)
+         )
+        (begin (display "Saliendo...\nGracias por usar nuestro codificador."))
+     )
+    ;FINALIZANDO IF
+    );lkjf
+  ;FINALIZANDO FOR
+  (ciclo)
+  )
+(main)
